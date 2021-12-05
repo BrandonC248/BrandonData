@@ -1,13 +1,13 @@
 # Air Quality Throughout the Years 1980-2021 
 
 ## Motivation 
-I decided to do my research on the air quality because I did my english paper on air pollution and I have always had interest on air quality. Plus it is one of the most of the important source needed to keep humans and other living creatures alive. With a lot of talk about how we have to become more sustainable I wondered how the air quality has changed since we implented Clean Air Act and other Acts to improve air quality. Are they working or are they not that effective and how will our air quality look in the future? 
+I decided to do my research on the air quality because I did my english paper on air pollution and I have always had interest on air quality. Plus it is one of the most of the important source needed to keep humans and other living creatures alive. With a lot of talk about how we have to become more sustainable I wondered how the air quality has changed since we implented Clean Air Act and other Acts to improve air quality. Are they working or are they not that effective?
 
 ## Data Source 
 The data was made by the EPA where they took the measure of AQI of Counties in the United States of America. They also look at the number of days where aqi was 0-50 which is good, 51-100 which is moderate, 101-150 which is unhealthy for sensitive groups, 151-200 which is unhealthy, and 201 and above is very unhealthy. There is measure of the highest aqi recorded that year, median aqi, and pollutants that were the main cause of the pollution. 
 
 ## Processing Steps 
-Since the data was all seperated by year I had to put all of the data into one csv file so I will be able to work on it. After putting it into one file I saw that not every County had aqi data for every day and there missing data for a few of the counties for some years. So I decided to choose one county that all of the data and was known for not having good air quality. So, I chose Los Angeles county that was known for not having bad air quality. In R I made a new dataset by only taking the rows that had Los Angeles in them, I could easly use the data. 
+Since the data was all seperated by year I had to merge all of the data into one csv file so I will be able to work on it. So, I used R to make dataset of all of the csv files. After putting it into one file I saw that not every County had aqi data for every day and there missing data for a few of the counties for some years. So I decided to choose one county that all of the data and was known for not having good air quality. So, I chose Los Angeles county that was known for not having bad air quality. In R I made a new dataset by only taking the rows that had Los Angeles in them, I could easly use the data. 
 
 ## Visualization 
 ![image](https://user-images.githubusercontent.com/91635769/144725984-774ff70c-ed21-4ad8-9c01-1848debdf715.png)
@@ -50,32 +50,32 @@ For analyzing my data I used the boxplot to find out the variance between my dat
 For good days there are some outliers on the top which are probably from the spikes that is found in the bar graph. But I think it is needed in the data because it is big factor on the median aqi. 
 
 <img src = https://user-images.githubusercontent.com/91635769/144728605-e79c4cf8-7395-40bc-a394-3b2f64a320ac.png width = 50%, height = 50%> 
-The moderate days seems to be 
+The moderate days seems to be skewed a little bit to the left as there are more days in a year with moderate days. Which is seen by the increase in moderate days from 1980 to 2021.
 
 <img src = https://user-images.githubusercontent.com/91635769/144728623-113dc598-2bab-4785-a1a6-3b1607196139.png width = 50%, height = 50%> 
-The unhealthy for sensitive group has 
+The unhealthy for sensitive boxplot seems to have 1 outlier at the bottom and 1 outlier on the top 
 
 <img src = https://user-images.githubusercontent.com/91635769/144728638-3300c0c6-1c8f-4277-9c07-7291cebb87c4.png width = 50%, height = 50%> 
-The boxplot for unhealthy days does not
+The boxplot for unhealthy seems to be left skewed as the median is closer to the top. 
 
 <img src = https://user-images.githubusercontent.com/91635769/144728653-53e71f04-2e5b-484c-8185-e43a6ae74e23.png width = 50%, height = 50%> 
-The very unhealthy days median is closer to the bottom as seen in the bar graph the amount of very unhealthy days has drastically so the median is closer to the bottom than the top.
+The very unhealthy days median is closer to the bottom as seen in the bar graph the amount of very unhealthy days has drastically so the median is closer to the bottom than the top. It is skewed down 
 
 <img src = https://user-images.githubusercontent.com/91635769/144728672-bba73ee6-5276-4bf0-b9ce-d92ebdf8dfd5.png width = 50%, height = 50%> 
 There is going to be outliers for hazardous days becuase there were only 2 days throughout 1980-2021 in Los Angeles that were recorded as hazardous days. Which found from the max aqi outlier. 
 
 <img src = https://user-images.githubusercontent.com/91635769/144728682-7076c83b-6feb-4d57-b78e-c63f32411988.png width = 50%, height = 50%> 
+Max AQI boxplot seems to be skewed to the right because of the outlier at the top which is from the year 1991 where there was hazardous day that was recorded. 
+
+<img src = https://user-images.githubusercontent.com/91635769/144728693-d37d9748-4c30-446e-a95b-9f85dbd73d8f.png width = 50%, height = 50%> 
+The boxplot for the median aqi is skewed to the right as there are more days that are lower than an aqi of 100. 
 
 
-<img src = https://user-images.githubusercontent.com/91635769/144728693-d37d9748-4c30-446e-a95b-9f85dbd73d8f.png width = 50%, height = 50%>
-The leg 
-
-
-
+The analysis helped me find out that throughout 1980 - 2021 the air quality in Los Angeles has been improving. The number very unhealthy days have gone done significally from 1980-2021 and median aqi has also gone down significally. This shows that going to more renewable resources does have affect in improving air quality. Although it will hard to predict the air quality with just the median aqi and etc but this does show that the air qualtiy has gotten better since the implementation of the Clean Air Act. 
 
 
 
 
 ## Description of the Code and Materials
-
+The data came from the EPA
 
